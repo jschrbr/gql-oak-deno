@@ -2,7 +2,8 @@ import { config } from "https://deno.land/x/dotenv/mod.ts";
 
 import { dso } from "https://deno.land/x/dso@v1.0.0/mod.ts";
 
-const { DB_URL, JAWSDB_URL } = config({ safe: true })
+const { DB_URL, JAWSDB_URL } = config()
+
 const url_patt = /^mysql:\/\/([^:@]+):?([^@]+)?@([^:]+):([^\/]+)\/(.+)$/i
 const db_url = DB_URL || JAWSDB_URL
 console.log(db_url)
