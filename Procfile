@@ -1,1 +1,1 @@
-web: deno run --allow-net --cached-only main.ts --port=$PORT
+web: deno run --allow-net --allow-read --allow-env --cached-only --config ./tsconfig.json main.ts --port=$PORT
