@@ -9,6 +9,7 @@ const app = new App();
 const { args } = Deno;
 const DEFAULT_PORT = 3000
 const argPort = flags.parse(args).port;
+console.log(argPort)
 const PORT = argPort ? Number(argPort) : DEFAULT_PORT
 
 
