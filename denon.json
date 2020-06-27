@@ -7,7 +7,7 @@
   },
   "scripts": {
     "start": {
-      "cmd": "deno run main.ts",
+      "cmd": "deno run ./src/main.ts",
       "desc": "run my app.ts file",
       "tsconfig": "tsconfig.json"
     }
