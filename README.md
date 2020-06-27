@@ -18,6 +18,10 @@
 git clone https://github.com/jschrbr/gql-oak-deno.git
 cd gql-oak-deno
 ./scripts/install.sh
+
+#Create deploy
+./scripts/create.sh
+
 ```
 
 > Make sure you update [config.ts](./src/config/config.ts) with the target SQL db credentials.
@@ -29,6 +33,13 @@ cd gql-oak-deno
 ./deno-run
 #Run (unmonitored)
 ./deno-watch
+```
+
+## Deploy
+
+```sh
+#Make sure you have run the create deploy script above
+./deno-deploy
 ```
 
 ## Run tests
