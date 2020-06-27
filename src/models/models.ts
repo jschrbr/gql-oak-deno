@@ -7,13 +7,26 @@ import {
 
 import dso from "../config/configDB.ts"
 
-
 export interface Part {
     id: number,
     updated_at: Date,
     created_at: Date,
     name: string,
     quantity: number,
+}
+
+export interface addInput {
+    name: string,
+    quantity: number
+}
+
+export interface editInput {
+    id: number,
+    quantity: number
+}
+
+export interface removeInput {
+    id: number,
 }
 
 @Model("parts")
