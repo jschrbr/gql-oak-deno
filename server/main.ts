@@ -15,7 +15,7 @@ app.use(reactSSR.allowedMethods())
 
 
 console.log(`http://localhost:${PORT}/graphql`)
-console.log(`http://localhost:${PORT}/`)
+console.log(`http://localhost:${PORT}/ssr`)
 
 await app.listen({ port: PORT })
 

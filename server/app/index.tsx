@@ -32,7 +32,7 @@ const html = `<!DOCTYPE html>
         `;
 
 router
-  .get("/", (ctx) => {
+  .get("/ssr", (ctx) => {
     ctx.response.type = "text/html";
     ctx.response.body = html;
   })
