@@ -28,8 +28,6 @@ cd gql-oak-deno
 
 > Make sure you update [config.ts](./src/config/config.ts) with the target SQL db credentials.
 
-um
-
 ## Usage
 
 ```sh
