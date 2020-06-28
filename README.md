@@ -11,6 +11,7 @@
 ### 🏠 [Homepage](https://github.com/jschrbr/gql-oak-deno)
 
 ### ✨ [Demo graphQL](https://parts-gql.herokuapp.com/graphql)
+
 ### ✨ [Demo React](https://parts-gql.herokuapp.com/)
 
 ## Install (Linux & Mac OS)
@@ -26,6 +27,8 @@ cd gql-oak-deno
 ```
 
 > Make sure you update [config.ts](./src/config/config.ts) with the target SQL db credentials.
+
+um
 
 ## Usage
 
