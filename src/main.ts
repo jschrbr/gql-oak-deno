@@ -9,6 +9,7 @@ import { reactSSR } from "./app/index.tsx"
 const app = new Application()
 
 
+
 app.use(graphQL.routes());
 app.use(graphQL.allowedMethods());
 app.use(reactSSR.routes())
