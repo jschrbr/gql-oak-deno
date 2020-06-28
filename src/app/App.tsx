@@ -1,7 +1,7 @@
-import { React, ReactDOMServer } from "../deps.ts";
+import { React, ReatDOMServer } from "../deps.ts";
 
 const loadingEl = React.createElement("h1", null, "Loading...");
-export const loading = ReactDOMServer.renderToString(loadingEl);
+export const loading = ReatDOMServer.renderToString(loadingEl);
 
 const App = () => {
   const [count, setCount] = React.useState(1);
@@ -17,7 +17,6 @@ const App = () => {
   };
 
   const getParts = async (): Promise<void> => {
-    console.log("hello");
     const url = "/graphql";
     const resolver = `    {
       getParts{
@@ -27,24 +26,22 @@ const App = () => {
           }
   }`;
     const query = { query: resolver };
-    const data = await (await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(query),
-    })).json();
+    const data = await (
+      await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(query),
+      })
+    ).json();
     console.log(data);
   };
 
   const getDinos = async () => {
     const dinos = Array(count).fill(0);
     return dinos.map((din, i) => {
-      console.log("poop");
-
-      return (
-        <span key={i}>🦕</span>
-      );
+      return <span key={i}>🦕</span>;
     });
   };
   return (
@@ -56,20 +53,17 @@ const App = () => {
           setCount(count + 1);
           setPadding("0px");
           getParts();
-          setDinos(await getDinos() as any);
+          setDinos((await getDinos()) as any);
         }}
       >
         Add a 🦕 in your garden!
       </a>
-
       <div className="row left-align">
         <div className="col s12 m2"></div>
         <div className="col s12 ml8">
           <div className="card green darken-1">
             <div className="card-content white-text">
-              <p style={garden}>
-                {dinos}
-              </p>
+              <p style={garden}>{dinos}</p>
             </div>
           </div>
         </div>

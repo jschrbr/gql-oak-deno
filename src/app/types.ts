@@ -6,6 +6,7 @@ declare global {
       h2: any;
       p: any;
       a: any;
+      span: any;
     }
   }
 }
