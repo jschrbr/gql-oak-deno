@@ -48,4 +48,7 @@ export const types = (gql as any)`
     editPart(input: PartEdit!): ResolveType!
     removePart(input: PartEdit!): ResolveType!
   }
+  type Subscription {
+    partChanged: Part
+  }
 `;

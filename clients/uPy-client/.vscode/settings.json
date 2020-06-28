@@ -1,0 +1,19 @@
+{
+  "python.linting.enabled": true,
+  "python.autoComplete.extraPaths": [
+    ".micropy/esp32_LoBo-3.2.24/frozen",
+    ".micropy/esp32_LoBo-3.2.24/stubs",
+    ".micropy/boilerplate"
+  ],
+  "python.autoComplete.typeshedPaths": [
+    ".micropy/esp32_LoBo-3.2.24/frozen",
+    ".micropy/esp32_LoBo-3.2.24/stubs",
+    ".micropy/boilerplate"
+  ],
+  "python.analysis.typeshedPaths": [
+    ".micropy/esp32_LoBo-3.2.24/frozen",
+    ".micropy/esp32_LoBo-3.2.24/stubs",
+    ".micropy/boilerplate"
+  ],
+  "python.linting.pylintEnabled": true
+}
