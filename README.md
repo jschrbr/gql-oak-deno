@@ -10,7 +10,8 @@
 
 ### 🏠 [Homepage](https://github.com/jschrbr/gql-oak-deno)
 
-### ✨ [Demo](https://parts-gql.herokuapp.com/graphql)
+### ✨ [Demo graphQL](https://parts-gql.herokuapp.com/graphql)
+### ✨ [Demo React](https://parts-gql.herokuapp.com/)
 
 ## Install (Linux & Mac OS)
 
