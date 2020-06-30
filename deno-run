@@ -1,2 +1,2 @@
 #!/bin/bash
-deno run --allow-net --allow-read=./ --allow-env -c ./server/tsconfig.json ./server/main.ts
+deno run --allow-net --allow-read=./ --allow-env -c ./tsconfig.json ./server/main.ts

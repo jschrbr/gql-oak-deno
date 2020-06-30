@@ -9,7 +9,7 @@
     "start": {
       "cmd": "deno run ./server/main.ts",
       "desc": "run my app.ts file",
-      "tsconfig": "./server/tsconfig.json"
+      "tsconfig": "./tsconfig.json"
     }
   }
 }
