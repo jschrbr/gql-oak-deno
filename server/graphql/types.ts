@@ -40,7 +40,7 @@ export const types = (gql as any)`
     done: Boolean
   }
   type Query {
-    getPart(name: String): Part
+    getPart(id: Int): Part
     getParts: [Part!]!
   }
   type Mutation {
