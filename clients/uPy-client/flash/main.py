@@ -5,12 +5,12 @@ import time
 import math
 import api
 
-massFactor = 4500
+massFactor = 4400
 scales = Scales(d_out=22, pd_sck=21)
 
 
 def getCount():
-    val = scales.stable_value()
+    val = abs(scales.stable_value())
     val = math.floor(val/massFactor)
     val = str(max(0, val))
     return val

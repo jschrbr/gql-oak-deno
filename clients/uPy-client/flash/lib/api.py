@@ -17,16 +17,16 @@ def getParts():
     return result
 
 
-def getPart(name):
+def getPart(id):
     result = client.execute('''
     {{
-        getPart(name: "{}"){{
+        getPart(id: {}){{
                 id
                 name
                 quantity
             }}
     }}
-    '''.format(name))
+    '''.format(id))
     return result
 
 

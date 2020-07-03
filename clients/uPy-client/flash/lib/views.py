@@ -1,7 +1,7 @@
 from m5stack import lcd, buttonB
 import api
 
-partName = '912-A2 M3x50'
+partId = 2
 
 
 def load_screen():
@@ -13,7 +13,7 @@ def load_screen():
 
 def get_partBtn():
     load_screen()
-    part = api.getPart(partName)
+    part = api.getPart(partId)
     part = part['data']['getPart']
     lcd.clear()
     partCount = part['quantity']
