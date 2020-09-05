@@ -4,52 +4,16 @@ const loadingEl = React.createElement("h1", null, "Loading...");
 export const loading = ReatDOMServer.renderToString(loadingEl);
 
 const App = () => {
-  const [count, setCount] = React.useState(1);
-  const [paddingGarden, setPadding] = React.useState("37px");
-  const [dinos, setDinos] = React.useState(<span></span>);
+  // const [paddingGarden, setPadding] = React.useState("37px");
   const [parts, setParts] = React.useState(<span></span>);
 
-  const garden = {
-    height: "auto",
-    fontSize: "50px",
-    padding: paddingGarden,
-    width: "100%",
-    alignSelf: "center",
-  };
-
-  const getParts = async (): Promise<void> => {
-    const url = "/graphql";
-    const resolver = `    {
-      getParts{
-              name
-              id
-              quantity
-          }
-  }`;
-    const query = { query: resolver };
-    const data = await (
-      await fetch(url, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(query),
-      })
-    ).json();
-    const parts = data.data.getParts;
-    const partArray = Array(parts.length).fill(0);
-    parts.forEach((part: any, i: number) => {
-      partArray[i] = <span key={part.id}>{part.name} </span>;
-    });
-    return partArray as any;
-  };
-
-  const getDinos = async () => {
-    const dinos = Array(count).fill(0);
-    return dinos.map((din, i) => {
-      return <span key={i}>🦕</span>;
-    });
-  };
+  // const garden = {
+  //   height: "auto",
+  //   fontSize: "50px",
+  //   padding: paddingGarden,
+  //   width: "100%",
+  //   alignSelf: "center",
+  // };
 
   React.useEffect(() => {
     const url = "/graphql";
