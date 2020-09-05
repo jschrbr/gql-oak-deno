@@ -3,7 +3,7 @@
     "allowJs": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "module": "esnext",
-    "target": "es2017"
-  }
+    "module": "esnext"
+  },
+  "target": "ES2017"
 }

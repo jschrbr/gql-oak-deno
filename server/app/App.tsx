@@ -1,7 +1,7 @@
-import { React, ReatDOMServer } from "../deps.ts";
+import { React, ReactDOMServer } from "../deps.ts";
 
 const loadingEl = React.createElement("h1", null, "Loading...");
-export const loading = ReatDOMServer.renderToString(loadingEl);
+export const loading = ReactDOMServer.renderToString(loadingEl);
 
 const App = () => {
   // const [paddingGarden, setPadding] = React.useState("37px");
