@@ -12,7 +12,7 @@
 
 ### ✨ [Demo graphQL](https://parts-gql.herokuapp.com/graphql)
 
-### ✨ [Demo React](https://parts-gql.herokuapp.com/)
+### ✨ [Demo React](https://parts-gql.herokuapp.com/ssr)
 
 ## Install (Linux & Mac OS)
 
