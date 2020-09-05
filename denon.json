@@ -9,15 +9,7 @@
     "start": {
       "cmd": "deno run ./server/main.ts",
       "desc": "run my app.ts file",
-      "tsconfig": {
-        "compilerOptions": {
-          "allowJs": true,
-          "emitDecoratorMetadata": true,
-          "experimentalDecorators": true,
-          "module": "esnext",
-          "target": "es2017"
-        }
-      }
+      "tsconfig": "./tsconfig.json"
     }
   }
 }
